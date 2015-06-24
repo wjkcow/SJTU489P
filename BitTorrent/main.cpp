@@ -1,15 +1,15 @@
-//
-//  main.cpp
-//  BitTorrent
-//
-//  Created by wjkcow on 6/21/15.
-//  Copyright (c) 2015 wjkcow. All rights reserved.
-//
-
 #include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    string str = "123 1234";
+    stringstream ss{str};
+    int i ;
+    ss >> i;
+    cout << str.substr(ss.tellg()) << endl;
     return 0;
 }

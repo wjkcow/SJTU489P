@@ -8,6 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		D240815C1B36A9B400D9CCCB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D240815B1B36A9B400D9CCCB /* main.cpp */; };
+		D24081641B36AA1A00D9CCCB /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081621B36AA1A00D9CCCB /* Connection.cpp */; };
+		D24081671B36AA2500D9CCCB /* ClientConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081651B36AA2500D9CCCB /* ClientConnection.cpp */; };
+		D240816A1B36AA3100D9CCCB /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081681B36AA3100D9CCCB /* Log.cpp */; };
+		D24081881B36AA5200D9CCCB /* hashlibpp.h in Sources */ = {isa = PBXBuildFile; fileRef = D240816E1B36AA3B00D9CCCB /* hashlibpp.h */; };
+		D24081891B36AA5200D9CCCB /* hl_exception.h in Sources */ = {isa = PBXBuildFile; fileRef = D240816F1B36AA3B00D9CCCB /* hl_exception.h */; };
+		D240818A1B36AA5200D9CCCB /* hl_hashwrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081701B36AA3B00D9CCCB /* hl_hashwrapper.h */; };
+		D240818B1B36AA5200D9CCCB /* hl_md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081711B36AA3B00D9CCCB /* hl_md5.cpp */; };
+		D240818C1B36AA5200D9CCCB /* hl_md5.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081721B36AA3B00D9CCCB /* hl_md5.h */; };
+		D240818D1B36AA5200D9CCCB /* hl_md5wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081731B36AA3B00D9CCCB /* hl_md5wrapper.cpp */; };
+		D240818E1B36AA5200D9CCCB /* hl_md5wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081741B36AA3B00D9CCCB /* hl_md5wrapper.h */; };
+		D240818F1B36AA5200D9CCCB /* hl_sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081751B36AA3B00D9CCCB /* hl_sha1.cpp */; };
+		D24081901B36AA5200D9CCCB /* hl_sha1.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081761B36AA3B00D9CCCB /* hl_sha1.h */; };
+		D24081911B36AA5200D9CCCB /* hl_sha1wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081771B36AA3B00D9CCCB /* hl_sha1wrapper.cpp */; };
+		D24081921B36AA5200D9CCCB /* hl_sha1wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081781B36AA3B00D9CCCB /* hl_sha1wrapper.h */; };
+		D24081931B36AA5200D9CCCB /* hl_sha256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081791B36AA3B00D9CCCB /* hl_sha256.cpp */; };
+		D24081941B36AA5200D9CCCB /* hl_sha256.h in Sources */ = {isa = PBXBuildFile; fileRef = D240817A1B36AA3B00D9CCCB /* hl_sha256.h */; };
+		D24081951B36AA5200D9CCCB /* hl_sha256wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D240817B1B36AA3B00D9CCCB /* hl_sha256wrapper.cpp */; };
+		D24081961B36AA5200D9CCCB /* hl_sha256wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D240817C1B36AA3B00D9CCCB /* hl_sha256wrapper.h */; };
+		D24081971B36AA5200D9CCCB /* hl_sha2ext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D240817D1B36AA3B00D9CCCB /* hl_sha2ext.cpp */; };
+		D24081981B36AA5200D9CCCB /* hl_sha2ext.h in Sources */ = {isa = PBXBuildFile; fileRef = D240817E1B36AA3B00D9CCCB /* hl_sha2ext.h */; };
+		D24081991B36AA5200D9CCCB /* hl_sha2mac.h in Sources */ = {isa = PBXBuildFile; fileRef = D240817F1B36AA3B00D9CCCB /* hl_sha2mac.h */; };
+		D240819A1B36AA5200D9CCCB /* hl_sha384wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081801B36AA3B00D9CCCB /* hl_sha384wrapper.cpp */; };
+		D240819B1B36AA5200D9CCCB /* hl_sha384wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081811B36AA3B00D9CCCB /* hl_sha384wrapper.h */; };
+		D240819C1B36AA5200D9CCCB /* hl_sha512wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081821B36AA3B00D9CCCB /* hl_sha512wrapper.cpp */; };
+		D240819D1B36AA5200D9CCCB /* hl_sha512wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081831B36AA3B00D9CCCB /* hl_sha512wrapper.h */; };
+		D240819E1B36AA5200D9CCCB /* hl_types.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081841B36AA3B00D9CCCB /* hl_types.h */; };
+		D240819F1B36AA5200D9CCCB /* hl_wrapperfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081851B36AA3B00D9CCCB /* hl_wrapperfactory.cpp */; };
+		D24081A01B36AA5200D9CCCB /* hl_wrapperfactory.h in Sources */ = {isa = PBXBuildFile; fileRef = D24081861B36AA3B00D9CCCB /* hl_wrapperfactory.h */; };
+		D24081A51B36AA7100D9CCCB /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081A11B36AA7100D9CCCB /* Server.cpp */; };
+		D24081A91B36AA7900D9CCCB /* Torrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081A71B36AA7900D9CCCB /* Torrent.cpp */; };
+		D24081AC1B36AAA600D9CCCB /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081AA1B36AAA600D9CCCB /* Message.cpp */; };
+		D24081B01B36AD0300D9CCCB /* TorrentServerMsgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081AE1B36AD0300D9CCCB /* TorrentServerMsgs.cpp */; };
+		D24081B31B36AE8700D9CCCB /* TorrentServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24081B11B36AE8700D9CCCB /* TorrentServer.cpp */; };
+		D251846D1B3AC4B700C23F85 /* UploaderMsgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D251846B1B3AC4B700C23F85 /* UploaderMsgs.cpp */; };
+		D25184701B3AC52800C23F85 /* DownloaderMsgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D251846E1B3AC52800C23F85 /* DownloaderMsgs.cpp */; };
+		D25184731B3AC7BE00C23F85 /* Address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D25184711B3AC7BE00C23F85 /* Address.cpp */; };
+		D2A152211B38650D00FD8DFE /* Uploader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A1521F1B38650D00FD8DFE /* Uploader.cpp */; };
+		D2A152241B38651900FD8DFE /* Downloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A152221B38651900FD8DFE /* Downloader.cpp */; };
+		D2B9D62B1B3919DE00FAD528 /* ThreadObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D6291B3919DE00FAD528 /* ThreadObject.cpp */; };
+		D2FA47E41B37C2E500398E15 /* TrackerMsgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2FA47E21B37C2E500398E15 /* TrackerMsgs.cpp */; };
+		D2FEC3901B36F66F006F75A2 /* Tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2FEC38E1B36F66F006F75A2 /* Tracker.cpp */; };
+		D2FEC3991B36F7EA006F75A2 /* Peer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2FEC3971B36F7EA006F75A2 /* Peer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +67,67 @@
 /* Begin PBXFileReference section */
 		D24081581B36A9B400D9CCCB /* BitTorrent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BitTorrent; sourceTree = BUILT_PRODUCTS_DIR; };
 		D240815B1B36A9B400D9CCCB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D24081621B36AA1A00D9CCCB /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		D24081631B36AA1A00D9CCCB /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		D24081651B36AA2500D9CCCB /* ClientConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClientConnection.cpp; sourceTree = "<group>"; };
+		D24081661B36AA2500D9CCCB /* ClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientConnection.h; sourceTree = "<group>"; };
+		D24081681B36AA3100D9CCCB /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		D24081691B36AA3100D9CCCB /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		D240816D1B36AA3B00D9CCCB /* .hashlibpp.h.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .hashlibpp.h.swp; sourceTree = "<group>"; };
+		D240816E1B36AA3B00D9CCCB /* hashlibpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashlibpp.h; sourceTree = "<group>"; };
+		D240816F1B36AA3B00D9CCCB /* hl_exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_exception.h; sourceTree = "<group>"; };
+		D24081701B36AA3B00D9CCCB /* hl_hashwrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_hashwrapper.h; sourceTree = "<group>"; };
+		D24081711B36AA3B00D9CCCB /* hl_md5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_md5.cpp; sourceTree = "<group>"; };
+		D24081721B36AA3B00D9CCCB /* hl_md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_md5.h; sourceTree = "<group>"; };
+		D24081731B36AA3B00D9CCCB /* hl_md5wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_md5wrapper.cpp; sourceTree = "<group>"; };
+		D24081741B36AA3B00D9CCCB /* hl_md5wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_md5wrapper.h; sourceTree = "<group>"; };
+		D24081751B36AA3B00D9CCCB /* hl_sha1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha1.cpp; sourceTree = "<group>"; };
+		D24081761B36AA3B00D9CCCB /* hl_sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha1.h; sourceTree = "<group>"; };
+		D24081771B36AA3B00D9CCCB /* hl_sha1wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha1wrapper.cpp; sourceTree = "<group>"; };
+		D24081781B36AA3B00D9CCCB /* hl_sha1wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha1wrapper.h; sourceTree = "<group>"; };
+		D24081791B36AA3B00D9CCCB /* hl_sha256.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha256.cpp; sourceTree = "<group>"; };
+		D240817A1B36AA3B00D9CCCB /* hl_sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha256.h; sourceTree = "<group>"; };
+		D240817B1B36AA3B00D9CCCB /* hl_sha256wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha256wrapper.cpp; sourceTree = "<group>"; };
+		D240817C1B36AA3B00D9CCCB /* hl_sha256wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha256wrapper.h; sourceTree = "<group>"; };
+		D240817D1B36AA3B00D9CCCB /* hl_sha2ext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha2ext.cpp; sourceTree = "<group>"; };
+		D240817E1B36AA3B00D9CCCB /* hl_sha2ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha2ext.h; sourceTree = "<group>"; };
+		D240817F1B36AA3B00D9CCCB /* hl_sha2mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha2mac.h; sourceTree = "<group>"; };
+		D24081801B36AA3B00D9CCCB /* hl_sha384wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha384wrapper.cpp; sourceTree = "<group>"; };
+		D24081811B36AA3B00D9CCCB /* hl_sha384wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha384wrapper.h; sourceTree = "<group>"; };
+		D24081821B36AA3B00D9CCCB /* hl_sha512wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_sha512wrapper.cpp; sourceTree = "<group>"; };
+		D24081831B36AA3B00D9CCCB /* hl_sha512wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_sha512wrapper.h; sourceTree = "<group>"; };
+		D24081841B36AA3B00D9CCCB /* hl_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_types.h; sourceTree = "<group>"; };
+		D24081851B36AA3B00D9CCCB /* hl_wrapperfactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hl_wrapperfactory.cpp; sourceTree = "<group>"; };
+		D24081861B36AA3B00D9CCCB /* hl_wrapperfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hl_wrapperfactory.h; sourceTree = "<group>"; };
+		D24081871B36AA3B00D9CCCB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D24081A11B36AA7100D9CCCB /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		D24081A21B36AA7100D9CCCB /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		D24081A71B36AA7900D9CCCB /* Torrent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Torrent.cpp; sourceTree = "<group>"; };
+		D24081A81B36AA7900D9CCCB /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
+		D24081AA1B36AAA600D9CCCB /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
+		D24081AB1B36AAA600D9CCCB /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		D24081AE1B36AD0300D9CCCB /* TorrentServerMsgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TorrentServerMsgs.cpp; sourceTree = "<group>"; };
+		D24081AF1B36AD0300D9CCCB /* TorrentServerMsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentServerMsgs.h; sourceTree = "<group>"; };
+		D24081B11B36AE8700D9CCCB /* TorrentServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TorrentServer.cpp; sourceTree = "<group>"; };
+		D24081B21B36AE8700D9CCCB /* TorrentServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentServer.h; sourceTree = "<group>"; };
+		D251846B1B3AC4B700C23F85 /* UploaderMsgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UploaderMsgs.cpp; sourceTree = "<group>"; };
+		D251846C1B3AC4B700C23F85 /* UploaderMsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploaderMsgs.h; sourceTree = "<group>"; };
+		D251846E1B3AC52800C23F85 /* DownloaderMsgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DownloaderMsgs.cpp; sourceTree = "<group>"; };
+		D251846F1B3AC52800C23F85 /* DownloaderMsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderMsgs.h; sourceTree = "<group>"; };
+		D25184711B3AC7BE00C23F85 /* Address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Address.cpp; sourceTree = "<group>"; };
+		D25184721B3AC7BE00C23F85 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		D2A1521F1B38650D00FD8DFE /* Uploader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Uploader.cpp; sourceTree = "<group>"; };
+		D2A152201B38650D00FD8DFE /* Uploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uploader.h; sourceTree = "<group>"; };
+		D2A152221B38651900FD8DFE /* Downloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Downloader.cpp; sourceTree = "<group>"; };
+		D2A152231B38651900FD8DFE /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		D2B9D6291B3919DE00FAD528 /* ThreadObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadObject.cpp; sourceTree = "<group>"; };
+		D2B9D62A1B3919DE00FAD528 /* ThreadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadObject.h; sourceTree = "<group>"; };
+		D2FA47E21B37C2E500398E15 /* TrackerMsgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrackerMsgs.cpp; sourceTree = "<group>"; };
+		D2FA47E31B37C2E500398E15 /* TrackerMsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerMsgs.h; sourceTree = "<group>"; };
+		D2FEC38E1B36F66F006F75A2 /* Tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tracker.cpp; sourceTree = "<group>"; };
+		D2FEC38F1B36F66F006F75A2 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		D2FEC3971B36F7EA006F75A2 /* Peer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Peer.cpp; sourceTree = "<group>"; };
+		D2FEC3981B36F7EA006F75A2 /* Peer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +160,102 @@
 		D240815A1B36A9B400D9CCCB /* BitTorrent */ = {
 			isa = PBXGroup;
 			children = (
+				D240816B1B36AA3B00D9CCCB /* hashlib2plus */,
+				D24081AD1B36AC3D00D9CCCB /* Connection */,
+				D251846A1B3AC3E400C23F85 /* Messages */,
+				D24081A71B36AA7900D9CCCB /* Torrent.cpp */,
+				D24081A81B36AA7900D9CCCB /* Torrent.h */,
+				D2B9D6291B3919DE00FAD528 /* ThreadObject.cpp */,
+				D2B9D62A1B3919DE00FAD528 /* ThreadObject.h */,
+				D24081681B36AA3100D9CCCB /* Log.cpp */,
+				D24081691B36AA3100D9CCCB /* Log.h */,
+				D24081B11B36AE8700D9CCCB /* TorrentServer.cpp */,
+				D24081B21B36AE8700D9CCCB /* TorrentServer.h */,
+				D2FEC38E1B36F66F006F75A2 /* Tracker.cpp */,
+				D2FEC38F1B36F66F006F75A2 /* Tracker.h */,
+				D2A1521F1B38650D00FD8DFE /* Uploader.cpp */,
+				D2A152201B38650D00FD8DFE /* Uploader.h */,
+				D2A152221B38651900FD8DFE /* Downloader.cpp */,
+				D2A152231B38651900FD8DFE /* Downloader.h */,
+				D2FEC3971B36F7EA006F75A2 /* Peer.cpp */,
+				D2FEC3981B36F7EA006F75A2 /* Peer.h */,
+				D25184711B3AC7BE00C23F85 /* Address.cpp */,
+				D25184721B3AC7BE00C23F85 /* Address.h */,
 				D240815B1B36A9B400D9CCCB /* main.cpp */,
 			);
 			path = BitTorrent;
+			sourceTree = "<group>";
+		};
+		D240816B1B36AA3B00D9CCCB /* hashlib2plus */ = {
+			isa = PBXGroup;
+			children = (
+				D240816C1B36AA3B00D9CCCB /* src */,
+			);
+			path = hashlib2plus;
+			sourceTree = "<group>";
+		};
+		D240816C1B36AA3B00D9CCCB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D240816D1B36AA3B00D9CCCB /* .hashlibpp.h.swp */,
+				D240816E1B36AA3B00D9CCCB /* hashlibpp.h */,
+				D240816F1B36AA3B00D9CCCB /* hl_exception.h */,
+				D24081701B36AA3B00D9CCCB /* hl_hashwrapper.h */,
+				D24081711B36AA3B00D9CCCB /* hl_md5.cpp */,
+				D24081721B36AA3B00D9CCCB /* hl_md5.h */,
+				D24081731B36AA3B00D9CCCB /* hl_md5wrapper.cpp */,
+				D24081741B36AA3B00D9CCCB /* hl_md5wrapper.h */,
+				D24081751B36AA3B00D9CCCB /* hl_sha1.cpp */,
+				D24081761B36AA3B00D9CCCB /* hl_sha1.h */,
+				D24081771B36AA3B00D9CCCB /* hl_sha1wrapper.cpp */,
+				D24081781B36AA3B00D9CCCB /* hl_sha1wrapper.h */,
+				D24081791B36AA3B00D9CCCB /* hl_sha256.cpp */,
+				D240817A1B36AA3B00D9CCCB /* hl_sha256.h */,
+				D240817B1B36AA3B00D9CCCB /* hl_sha256wrapper.cpp */,
+				D240817C1B36AA3B00D9CCCB /* hl_sha256wrapper.h */,
+				D240817D1B36AA3B00D9CCCB /* hl_sha2ext.cpp */,
+				D240817E1B36AA3B00D9CCCB /* hl_sha2ext.h */,
+				D240817F1B36AA3B00D9CCCB /* hl_sha2mac.h */,
+				D24081801B36AA3B00D9CCCB /* hl_sha384wrapper.cpp */,
+				D24081811B36AA3B00D9CCCB /* hl_sha384wrapper.h */,
+				D24081821B36AA3B00D9CCCB /* hl_sha512wrapper.cpp */,
+				D24081831B36AA3B00D9CCCB /* hl_sha512wrapper.h */,
+				D24081841B36AA3B00D9CCCB /* hl_types.h */,
+				D24081851B36AA3B00D9CCCB /* hl_wrapperfactory.cpp */,
+				D24081861B36AA3B00D9CCCB /* hl_wrapperfactory.h */,
+				D24081871B36AA3B00D9CCCB /* Makefile */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D24081AD1B36AC3D00D9CCCB /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				D24081A11B36AA7100D9CCCB /* Server.cpp */,
+				D24081A21B36AA7100D9CCCB /* Server.h */,
+				D24081651B36AA2500D9CCCB /* ClientConnection.cpp */,
+				D24081661B36AA2500D9CCCB /* ClientConnection.h */,
+				D24081621B36AA1A00D9CCCB /* Connection.cpp */,
+				D24081631B36AA1A00D9CCCB /* Connection.h */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		D251846A1B3AC3E400C23F85 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				D24081AA1B36AAA600D9CCCB /* Message.cpp */,
+				D24081AB1B36AAA600D9CCCB /* Message.h */,
+				D24081AE1B36AD0300D9CCCB /* TorrentServerMsgs.cpp */,
+				D24081AF1B36AD0300D9CCCB /* TorrentServerMsgs.h */,
+				D2FA47E21B37C2E500398E15 /* TrackerMsgs.cpp */,
+				D2FA47E31B37C2E500398E15 /* TrackerMsgs.h */,
+				D251846B1B3AC4B700C23F85 /* UploaderMsgs.cpp */,
+				D251846C1B3AC4B700C23F85 /* UploaderMsgs.h */,
+				D251846E1B3AC52800C23F85 /* DownloaderMsgs.cpp */,
+				D251846F1B3AC52800C23F85 /* DownloaderMsgs.h */,
+			);
+			name = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +314,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24081881B36AA5200D9CCCB /* hashlibpp.h in Sources */,
+				D24081891B36AA5200D9CCCB /* hl_exception.h in Sources */,
+				D240818A1B36AA5200D9CCCB /* hl_hashwrapper.h in Sources */,
+				D240818B1B36AA5200D9CCCB /* hl_md5.cpp in Sources */,
+				D240818C1B36AA5200D9CCCB /* hl_md5.h in Sources */,
+				D240818D1B36AA5200D9CCCB /* hl_md5wrapper.cpp in Sources */,
+				D240818E1B36AA5200D9CCCB /* hl_md5wrapper.h in Sources */,
+				D251846D1B3AC4B700C23F85 /* UploaderMsgs.cpp in Sources */,
+				D240818F1B36AA5200D9CCCB /* hl_sha1.cpp in Sources */,
+				D2B9D62B1B3919DE00FAD528 /* ThreadObject.cpp in Sources */,
+				D24081901B36AA5200D9CCCB /* hl_sha1.h in Sources */,
+				D24081911B36AA5200D9CCCB /* hl_sha1wrapper.cpp in Sources */,
+				D24081A91B36AA7900D9CCCB /* Torrent.cpp in Sources */,
+				D24081B31B36AE8700D9CCCB /* TorrentServer.cpp in Sources */,
+				D24081921B36AA5200D9CCCB /* hl_sha1wrapper.h in Sources */,
+				D2A152211B38650D00FD8DFE /* Uploader.cpp in Sources */,
+				D24081931B36AA5200D9CCCB /* hl_sha256.cpp in Sources */,
+				D24081941B36AA5200D9CCCB /* hl_sha256.h in Sources */,
+				D24081951B36AA5200D9CCCB /* hl_sha256wrapper.cpp in Sources */,
+				D24081961B36AA5200D9CCCB /* hl_sha256wrapper.h in Sources */,
+				D24081971B36AA5200D9CCCB /* hl_sha2ext.cpp in Sources */,
+				D2FA47E41B37C2E500398E15 /* TrackerMsgs.cpp in Sources */,
+				D24081981B36AA5200D9CCCB /* hl_sha2ext.h in Sources */,
+				D2A152241B38651900FD8DFE /* Downloader.cpp in Sources */,
+				D24081991B36AA5200D9CCCB /* hl_sha2mac.h in Sources */,
+				D240819A1B36AA5200D9CCCB /* hl_sha384wrapper.cpp in Sources */,
+				D240819B1B36AA5200D9CCCB /* hl_sha384wrapper.h in Sources */,
+				D240819C1B36AA5200D9CCCB /* hl_sha512wrapper.cpp in Sources */,
+				D24081AC1B36AAA600D9CCCB /* Message.cpp in Sources */,
+				D240819D1B36AA5200D9CCCB /* hl_sha512wrapper.h in Sources */,
+				D25184701B3AC52800C23F85 /* DownloaderMsgs.cpp in Sources */,
+				D240819E1B36AA5200D9CCCB /* hl_types.h in Sources */,
+				D240819F1B36AA5200D9CCCB /* hl_wrapperfactory.cpp in Sources */,
+				D24081A01B36AA5200D9CCCB /* hl_wrapperfactory.h in Sources */,
+				D25184731B3AC7BE00C23F85 /* Address.cpp in Sources */,
 				D240815C1B36A9B400D9CCCB /* main.cpp in Sources */,
+				D2FEC3991B36F7EA006F75A2 /* Peer.cpp in Sources */,
+				D24081A51B36AA7100D9CCCB /* Server.cpp in Sources */,
+				D24081641B36AA1A00D9CCCB /* Connection.cpp in Sources */,
+				D2FEC3901B36F66F006F75A2 /* Tracker.cpp in Sources */,
+				D240816A1B36AA3100D9CCCB /* Log.cpp in Sources */,
+				D24081671B36AA2500D9CCCB /* ClientConnection.cpp in Sources */,
+				D24081B01B36AD0300D9CCCB /* TorrentServerMsgs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +470,7 @@
 				D24081611B36A9B400D9CCCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
