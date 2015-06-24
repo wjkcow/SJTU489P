@@ -30,6 +30,11 @@ void Message::append_str(const char* c_str, int sz){
     data.insert(data.end(), c_str, c_str + sz);
 }
 
+void Message::append_str(const string& str){
+    append_int32(static_cast<int32_t>(str.size()));
+    append_str(str.c_str(), static_cast<int>(str.size()));
+}
+
 char* Message::get_buffer(int sz){
     int before_size = static_cast<int>(data.size());
     data.resize(before_size + sz);
@@ -37,7 +42,7 @@ char* Message::get_buffer(int sz){
 }
 
 void Message::update_size(){
-    int sz = static_cast<int>(data.size());
+    int sz = static_cast<int>(data.size()) - reserve_size_c;
     char* size_ptr = reinterpret_cast<char*>(&sz);
     copy(size_ptr, size_ptr + sizeof(int32_t), data.data());
 }

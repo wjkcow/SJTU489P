@@ -3,6 +3,7 @@
 
 #include <memory>
 #include <exception>
+#include <string>
 class Message;
 
 class Connection :
@@ -14,8 +15,8 @@ public:
     
     int  get_int32();
     char get_char();
-    void get_str(char* buffer, int sz);
-    
+    void get_c_str(char* buffer, int sz);
+    std::string get_str();
     
     void send(char* buffer, int sz);
 private:

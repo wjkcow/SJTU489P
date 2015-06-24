@@ -34,6 +34,24 @@ Torrent::Torrent(const string& filename_, Address tracker_address): filename{fil
     infile.close();
 }
 
+Torrent::Torrent(const std::string& content){
+    stringstream ss(content);
+    ss >> filename;
+    ss >> file_size;
+    int pieces;
+    ss >> pieces;
+    string hash;
+    for (int i = 0; i < pieces; ++i) {
+        ss >> hash;
+        filehash.push_back(hash);
+    }
+    tracker = *Address::from_string(content.substr(ss.tellg()));
+    if(!ss){
+        logerr("Parsing error");
+        throw exception();
+    }
+}
+
 string Torrent::to_string(){
     stringstream ss;
     ss << filename << endl << file_size << endl << filehash.size()  << endl;
@@ -44,25 +62,7 @@ string Torrent::to_string(){
     return ss.str();
 }
 
-shared_ptr<Torrent> Torrent::from_string(const string& content){
-    shared_ptr<Torrent> torrent_ptr{new Torrent()};
-    stringstream ss(content);
-    ss >> torrent_ptr->filename;
-    ss >> torrent_ptr->file_size;
-    int pieces;
-    ss >> pieces;
-    string hash;
-    for (int i = 0; i < pieces; ++i) {
-        ss >> hash;
-        torrent_ptr->filehash.push_back(hash);
-    }
-    torrent_ptr->tracker = *Address::from_string(content.substr(ss.tellg()));
-    if(!ss){
-        logerr("Parsing error");
-        throw exception();
-    }
-    return torrent_ptr;
-}
+
 
 string Torrent::hash(){
     shared_ptr<hashwrapper> sha1 = make_shared<sha1wrapper>();

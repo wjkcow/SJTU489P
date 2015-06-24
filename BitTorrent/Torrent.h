@@ -12,9 +12,8 @@ class Torrent{
 public:
 
     Torrent(const std::string& file, Address tracker_address);
-    
-    static std::shared_ptr<Torrent> from_string(const std::string& content);
-    
+    Torrent(const std::string& content);
+        
     std::string to_string();
     
     Address get_tracker();
@@ -38,7 +37,6 @@ public:
     std::string hash();
     
 private:
-    Torrent(){}
     Address tracker;
     int file_size;
     std::string filename;

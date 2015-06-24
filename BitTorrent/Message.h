@@ -27,6 +27,8 @@ protected:
     void append_int32(int32_t i);
     void append_char(char c);
     void append_str(const char* c_str, int sz);
+    void append_str(const std::string& str);
+
     char* get_buffer(int sz);
 private:
     void update_size();

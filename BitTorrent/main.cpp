@@ -6,10 +6,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    string str = "123 1234";
-    stringstream ss{str};
-    int i ;
-    ss >> i;
-    cout << str.substr(ss.tellg()) << endl;
+    string str = "1";
+    cout << str.size();
     return 0;
 }

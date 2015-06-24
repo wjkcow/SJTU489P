@@ -11,19 +11,19 @@ public:
     virtual void handle() = 0;
 };
 
-// send by uploader, recv by tracker
+// send by uploader
 class ServeTorrentRequest : public TrackerMsg{
 public:
     void send_through(std::shared_ptr<Connection> connection);
 };
 
-// send by downloaer, recv by tracker
+// send by downloaer
 class ListPeerRequest : public TrackerMsg{
 public:
     void send_through(std::shared_ptr<Connection> connection);
 };
 
-// send by uploader, recv by tracker
+// send by uploader
 class HeartBeat : public TrackerMsg{
 public:
     void send_through(std::shared_ptr<Connection> connection);

@@ -15,10 +15,6 @@ Connection::~Connection(){
 
 int Connection::get_int32(){
     int32_t i;
-//    ssize_t read_len = recv(sock, &i, sizeof(int32_t), 0);
-//    if (read_len != sizeof(int32_t)) {
-//        throw UnableToReadFromConnection();
-//    }
     if (!force_receive(&i, sizeof(int32_t))) {
         throw UnableToReadFromConnection();
     }
@@ -34,15 +30,18 @@ char Connection::get_char(){
     return c;
 }
 
-void Connection::get_str(char* buffer, int sz){
-//    ssize_t read_len = recv(sock, buffer, sz, 0);
-//    if (read_len != sz) {
-//        throw UnableToReadFromConnection();
-//    }
+void Connection::get_c_str(char* buffer, int sz){
     
     if (!force_receive(buffer, sz)) {
         throw UnableToReadFromConnection();
     }
+}
+
+std::string Connection::get_str(){
+    int32_t str_size = get_int32();
+    char buffer[str_size];
+    get_c_str(buffer, str_size);
+    return std::string{buffer, static_cast<size_t>(str_size)};
 }
 
 void Connection::send(char* buffer, int size){
