@@ -67,9 +67,6 @@ private:
 class ListTorrentRequest : public TorrentServerMsg,
 public std::enable_shared_from_this<ListTorrentRequest>{
 public:
-    ListTorrentRequest();
-    ListTorrentRequest(std::shared_ptr<Connection> connection);
-
     void handle(std::shared_ptr<TorrentServerWorker>) override;
 protected:
     char get_message_ID() override {return list_torrent_ID_c;}

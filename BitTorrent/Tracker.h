@@ -10,7 +10,7 @@
 
 class Connection;
 
-class TrackerServer : public Server{
+class Tracker : public Server{
 public:
     
 protected:
@@ -23,9 +23,9 @@ private:
     
 };
 
-class TrackerServerWorker : public Connection{
+class TrackerWorker : public Connection{
 public:
-    TrackerServerWorker(int sock_);
+    TrackerWorker(int sock_);
 private:
     void handle();
 };

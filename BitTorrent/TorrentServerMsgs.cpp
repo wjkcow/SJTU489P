@@ -27,3 +27,6 @@ void DownloadTorrentRequest::handle(std::shared_ptr<TorrentServerWorker> worker)
     worker->handle(shared_from_this());
 }
 
+void ListTorrentRequest::handle(std::shared_ptr<TorrentServerWorker> worker){
+    worker->handle(shared_from_this());
+}
