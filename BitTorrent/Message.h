@@ -37,6 +37,4 @@ private:
     std::vector<char> data;
 };
 
-using ACK = Message;
-
 #endif

@@ -18,7 +18,8 @@ public:
 };
 
 // send by uploader
-class ServeTorrentRequest : public TrackerMsg{
+class ServeTorrentRequest : public TrackerMsg,
+public std::enable_shared_from_this<ServeTorrentRequest>{
 public:
     ServeTorrentRequest(const std::string& torrent_id_);
     void handle(std::shared_ptr<TrackerWorker>) override;
@@ -30,7 +31,8 @@ protected:
 };
 
 // send by downloaer
-class ListPeerRequest : public TrackerMsg{
+class ListPeerRequest : public TrackerMsg,
+public std::enable_shared_from_this<ListPeerRequest>{
 public:
     void handle(std::shared_ptr<TrackerWorker>) override;
 protected:
@@ -40,7 +42,8 @@ protected:
 };
 
 // send by uploader
-class HeartBeat : public TrackerMsg{
+class HeartBeat : public TrackerMsg,
+public std::enable_shared_from_this<HeartBeat>{
 public:
     void handle(std::shared_ptr<TrackerWorker>) override;
 protected:

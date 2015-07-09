@@ -3,4 +3,4 @@
 
 #include <stdio.h>
 
-#endif /* defined(__BitTorrent__Downloader__) */
+#endif 

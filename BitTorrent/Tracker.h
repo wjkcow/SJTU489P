@@ -9,6 +9,9 @@
 #include <map>
 
 class Connection;
+class ServeTorrentRequest;
+class ListPeerRequest;
+class HeartBeat;
 
 class Tracker : public Server{
 public:
@@ -26,6 +29,11 @@ private:
 class TrackerWorker : public Connection{
 public:
     TrackerWorker(int sock_);
+    
+    void handle(std::shared_ptr<ServeTorrentRequest>){}
+    void handle(std::shared_ptr<ListPeerRequest>){}
+    void handle(std::shared_ptr<HeartBeat>){}
+
 private:
     void handle();
 };

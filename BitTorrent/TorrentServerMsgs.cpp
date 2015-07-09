@@ -18,6 +18,11 @@ void UploadTorrentRequest::handle(std::shared_ptr<TorrentServerWorker> worker){
     worker->handle(shared_from_this());
 }
 
+DownloadTorrentRequest::DownloadTorrentRequest(const std::string& torrent_id_):
+torrent_id{torrent_id_}{
+    append_str(torrent_id);
+}
+
 DownloadTorrentRequest::DownloadTorrentRequest(std::shared_ptr<Connection> connection){
     torrent_id = connection->get_str();
     append_str(torrent_id);

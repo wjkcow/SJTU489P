@@ -1,10 +1,8 @@
 #ifndef PEER_H
 #define PEER_H
 
+#include "Address.h"
 
-class Peer{
-public:
-    
-};
+using Peer = Address;
 
 #endif 

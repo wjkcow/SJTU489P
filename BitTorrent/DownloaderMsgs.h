@@ -16,4 +16,24 @@ public:
     void send_through(std::shared_ptr<Connection> connection);
 };
 
+// send by uploader
+class MsgHandShakeReply : public Message{
+    
+};
+
+// send by uploader
+class MsgBitField : public Message {
+    
+};
+
+// send by uploader
+class MsgReplyContent : public Message {
+    
+};
+
+// send by uploader
+class MsgHave : public Message {
+    
+};
+
 #endif 

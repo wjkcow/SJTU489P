@@ -46,8 +46,7 @@ private:
 class DownloadTorrentRequest : public TorrentServerMsg,
 public std::enable_shared_from_this<DownloadTorrentRequest>{
 public:
-    DownloadTorrentRequest(const std::string& torrent_id_) :
-    torrent_id{torrent_id_}{}
+    DownloadTorrentRequest(const std::string& torrent_id_);
     DownloadTorrentRequest(std::shared_ptr<Connection> connection);
     
     void handle(std::shared_ptr<TorrentServerWorker>) override;
